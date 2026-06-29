@@ -1,0 +1,7 @@
+Supplier Data Classification Standards
+
+Supplier tax IDs, bank details, and contract rates are classified as Confidential.
+Public marketing information may be stored in general collaboration tools.
+Confidential supplier data must remain in approved systems: SAP Ariba, Azure SQL, and SharePoint Secure Library.
+Data residency: EU supplier records must remain in EU Azure regions.
+Retention: inactive supplier records must be archived after 24 months and deleted after legal hold release.

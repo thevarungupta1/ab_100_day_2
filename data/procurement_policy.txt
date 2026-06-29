@@ -1,0 +1,8 @@
+Contoso Manufacturing Supplier Onboarding Policy
+
+All new suppliers must complete due diligence before purchase orders are issued.
+Suppliers with annual expected spend above USD 250,000 require enhanced verification.
+Suppliers operating in high-risk jurisdictions must provide additional ownership disclosure.
+Procurement must maintain audit logs for every onboarding decision for seven years.
+Auto-approval is allowed only when risk score is below enterprise threshold and no sanctions match exists.
+Rejected suppliers may reapply after remediation evidence is submitted and reviewed by Compliance.

@@ -1,0 +1,7 @@
+Contoso Anti-Bribery and Third-Party Risk Policy
+
+Gifts above USD 100 from suppliers require prior approval from Legal.
+Suppliers must confirm they do not employ government officials as hidden owners.
+Any supplier linked to sanctioned entities must be blocked immediately.
+Agents and distributors in emerging markets require annual compliance attestation.
+Procurement AI recommendations are advisory; final accountability remains with human approvers.

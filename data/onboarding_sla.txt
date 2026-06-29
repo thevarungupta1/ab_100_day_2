@@ -1,0 +1,8 @@
+Supplier Onboarding SLA and Workflow Standards
+
+Standard onboarding target: 5 business days for low-risk suppliers.
+High-risk onboarding target: 10 business days including human review.
+Mandatory workflow stages: Intake, Due Diligence, Policy Check, Risk Scoring, Approval, ERP Registration.
+Workflow automation must emit trace events for each stage transition.
+If human review is required, assign to Regional Procurement Manager queue.
+ERP registration is blocked until approval status is Approved.
