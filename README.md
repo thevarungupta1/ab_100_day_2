@@ -382,7 +382,15 @@ def print_observability_report(module_filter=None):
         )
 
     return report
-
-
-
 ```
+
+### Step: create Data files
+Policy corpus in `data/`:
+- `procurement_policy.txt` - onboarding rules and auto-approval criteria
+- `anti_bribery_policy.txt` - third party risk and human accountability
+- `supplier_data_classification.txt` - confidential data handling and residency
+- `onboarding_sla.txt` - workflow stages and SLA targets
+
+
+### Step: Create Prompt Files
+- `workflow_orchestrator.txt` - workflow coordination guidance
