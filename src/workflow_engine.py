@@ -1,10 +1,3 @@
-#
-
-
-
-# Exercise 1: Create Workflow 
-
-```python
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any
@@ -89,5 +82,3 @@ class SupplierOnboardingWorkflow:
         for item in self.context.history:
             lines.append(f"  - {item['from']} -> {item['to']}: {item['detail']}")
         return "\n".join(lines)
-
-```

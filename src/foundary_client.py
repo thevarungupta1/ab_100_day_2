@@ -1,5 +1,12 @@
 from azure.ai.inference import ChatCompletionsClient
-from azure.ai.inference.models import SystemMessage, UserMessage
+from azure.ai.inference.models import (
+    AssistantMessage,
+    ChatCompletionsToolsDefinition,
+    FunctionDefinition,
+    SystemMessage,
+    UserMessage
+    ToolMessage
+)
 from azure.core.credentials import AzureKeyCredential
 
 from src.config import AZURE_AI_ENDPOINT, AZURE_AI_KEY, PRIMARY_MODEL
