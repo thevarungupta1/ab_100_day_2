@@ -37,9 +37,9 @@ class WorkflowContext:
 
 class SupplierOnboardingWorkflow:
     TRANSITIONS = {
-        WorkflowState.INTAKE: WorkflowState.DUE_DILIGENCE,
-        WorkflowState.DUE_DILIGENCE: WorkflowState.POLICY_CHECK,
-        WorkflowState.POLICY_CHECK: WorkflowState.RISK_SCORING,
+        WorkflowStatus.INTAKE: WorkflowStatus.DUE_DILIGENCE,
+        WorkflowStatus.DUE_DILIGENCE: WorkflowStatus.POLICY_CHECK,
+        WorkflowStatus.POLICY_CHECK: WorkflowStatus.RISK_SCORING,
     }
 
     def __init__(self, request: SupplierRequest):
@@ -59,17 +59,17 @@ class SupplierOnboardingWorkflow:
     def route_after_risk(self, risk_score: int, threshold: int):
         if risk_score >= threshold:
             self.context.transition(
-                WorkflowState.HUMAN_REVIEW,
+                WorkflowStatus.HUMAN_REVIEW,
                 f"Risk score {risk_score} exceeds threshold {threshold}, routing to human review"
         else:
             self.context.transition(
-                WorkflowState.ERP_REGISTRATION,
+                WorkflowStatus.ERP_REGISTRATION,
                 f"risk score {risk_score} within auto-approval limit",
             )    
             return self.context
 
     def complete(self, approval: bool, detail: str):
-        target = WorkflowState.COMPLETED if approved else WorkflowState.REJECTED
+        target = WorkflowStatus.COMPLETED if approval else WorkflowStatus.REJECTED
         self.context.transition(target, detail)
         return self.context
         

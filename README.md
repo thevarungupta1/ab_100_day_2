@@ -3,6 +3,9 @@
 
 
 # Exercise 1: Create Workflow 
+Deterministic suppier onboarding state machine
+
+`src/workflow_engine.py`
 
 ```python
 from dataclasses import dataclass, field
@@ -91,3 +94,10 @@ class SupplierOnboardingWorkflow:
         return "\n".join(lines)
 
 ```
+
+### Step : create Enterprise Tools
+Mock enterprise APIs and tools schemas:
+- Credit bureau API
+- Sanction screening API
+- ERP registration API
+- Risk score calculator

@@ -4,7 +4,7 @@ from azure.ai.inference.models import (
     ChatCompletionsToolsDefinition,
     FunctionDefinition,
     SystemMessage,
-    UserMessage
+    UserMessage,
     ToolMessage
 )
 from azure.core.credentials import AzureKeyCredential
