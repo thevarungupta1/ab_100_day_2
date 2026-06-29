@@ -40,7 +40,7 @@ def register_supplier_in_erp(supplier_id, legal_name, category, annual_spend_usd
         "legal_name": legal_name,
         "category": category,
         "annual_spend_usd": annual_spend_usd,
-        "erp_vendor_code": f"VND-{suppier_id[-4:]}",
+        "erp_vendor_code": f"VND-{supplier_id[-4:]}",
         "status": "REGISTERED",
         "registered_at": datetime.utcnow().isoformat()
     }

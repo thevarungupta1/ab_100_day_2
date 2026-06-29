@@ -318,3 +318,12 @@ def resolve_approval(approval_id, approved, reviewer="procurement_manager"):
     connection.commit()
     connection.close()
 ```
+
+### Step : Create Observability Report Utlity
+Aggegates traces and metric files into an architecture-friendly report
+
+`src/observability_report.py`
+
+```python
+
+```
