@@ -1,0 +1,5 @@
+timestamp,module,agent,step,status,details
+2026-06-29 14:29:14.522293,01_workflow_automation,WorkflowEngine,Input received,SUCCESS,Acme Corp
+2026-06-29 14:29:14.525292,01_workflow_automation,WorkflowEngine,Due diligence,SUCCESS,KYC package complete
+2026-06-29 14:29:14.527295,01_workflow_automation,WorkflowEngine,Policy check,SUCCESS,Policy check passed
+2026-06-29 14:29:14.529289,01_workflow_automation,WorkflowEngine,Risk scoring,SUCCESS,Risk score calculated

@@ -60,7 +60,7 @@ class SupplierOnboardingWorkflow:
         if risk_score >= threshold:
             self.context.transition(
                 WorkflowStatus.HUMAN_REVIEW,
-                f"Risk score {risk_score} exceeds threshold {threshold}, routing to human review"
+                f"Risk score {risk_score} exceeds threshold {threshold}, routing to human review")
         else:
             self.context.transition(
                 WorkflowStatus.ERP_REGISTRATION,
